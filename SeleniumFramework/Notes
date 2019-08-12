@@ -1,0 +1,410 @@
+First One:
+   -- Pre-requisites
+   -- how to created the maven project
+   -- how to add the dependencies in pom.xml file
+   -- how to create the first selenium script and make ready to run through maven
+Second One:
+   -- how to add the firefox/chrome driver --gecko driver (to run the scripts on firefox browsre)
+   -- run a test on chrome /firefox browser
+   -- code to know the location of project 
+ Third One
+   -- How to run the scripts on chrome browser 
+   -- donwload chrome drive and add the driver path in the script 
+   -- we can also path in system environment variables section like for java we do the same
+Fourth One:
+   -- How to run the scripts on internet explorer
+   -- same as chrome and gecko driver 
+   -- we have to do some changes in ie -- 1.set the protective mode--uncheck and apply it 
+      2.change the zoom level to 100 from 75 3.
+Five One:
+   -- How to find webdriver manager
+   -- to handle the downloads of browser driver we can use webdriver manager -no need to download drivers
+   -- add the dependencis of wm in pom xml file
+   -- webdrivermanager.chromedriver().version().setup();
+   -- driver = new chromedriver()
+Sixth One:
+   -- How to find the elements 
+   -- there are some browsre extnesions to find the locator values
+   -- findelement() method to give a single element
+   -- findelements() method gives a multiple elements
+   -- id name clas path link text patail link text,xpath,tag,css selector 
+   -- write locator value for any one of the locators
+   -- list collection is used to store the list of webelements
+   -- Inspect webelements ,check any one and then use locators with selenium functions
+   -- use selenium functions to locate web elements
+Seventh One:
+   -- create first selenium script 
+   -- create java class 
+   -- creat method and then call that one in main method
+Eight one:
+   -- What is POM
+   -- How to implement pom
+   -- A design pattern
+   -- non pom structor -- calss a contains webelement+ methods and test methods
+   -- pom structure -- clas a contains webelemtn _methods and class b cointains test methiods
+   -- akk tge oibejcts are in seperate page
+   -- create seperate object rpepositor to store object locatos 
+   -- for each webpafe there should be a seperate page class
+   -- page class wkll have all object repositories and preferablh action methods for the correspoding page
+   -- step1 -- crate class for every webpage
+   -- step2 -- add object locators
+   -- step3 -- create class for test 
+   -- stepd4-- refer objects from page class
+   -- Test objects and functions are sepeated for easy maintainance and keeping the code clean 
+   -- objects are kept seperated from the tes scripts and can be used multiple times in multiple tes
+   -- e very unbiuqe object is created only by omnce
+   -- easy maintainace and less reword
+      
+ Nineth:
+  -- Testng,how to install and how to add the libraries
+  -- Testing framework for the java programming klangugage
+  -- makes test creation ,,execution aand reproting efficient 
+  -- uses annotations also
+  -- add testng plugin to eclipse 
+  -- add testng libraries 
+  -- create testng and validate wheterh its installed succesfully r not 
+  -- write test setup method 
+  -- write tear down method 
+  -- will get testoutput folder and htmf filem
+  -- helps inn grouping of tests
+  -- helps in prioritizing the tests
+  -- paralllel execution 
+  -- reporting 
+10th:
+  -- How to implement extent report 
+  -- add the extent libraries 
+  -- html reporting library
+  -- it is a liobrbary helps us to create trhe repor in html format 
+  -- an open  sourcfe reporitng api for java nd dot net 
+  -- it creates interactive html report of your test executin
+  -- download the jars 
+  -- add the libraries in pom file
+  -- create references for extent report
+  -- creare object of extenthtmlreportere 
+  -- create the object of extent report and pass the referene variable to attachreport method
+  -- Extent test with created test method 
+  -- add code and add the extent report logs lines
+  -- extent flush method we have to use at the end 
+  --  log into pass fail 
+  -- run and validate 
+11th:
+  -- Extent reports with testng 
+  -- prerequisite extent code will be in beforemethod
+  -- main fucntionality of exten report woll be in test method
+  -- flush method will be in @teardown method 
+  
+12th :
+  -- Desired Capabilities
+  -- how to use the same in selenium
+  -- it is a class in selenium library
+  -- series of ta key value pair
+  -- used to set the different properites for the browser like browsername ,,v,p
+  -- read only capabilites
+  -- read write capaboilities
+  -- to deal with ie browser ina  simople mannner,we can set the desired capabilites
+13th:
+  -- Testng.xml file
+  -- create and run the testng.xml file
+  -- configuration file in  testng.
+  -- used to provide the execution settings
+  -- include tests ,class,packages
+  -- run in parallel
+  -- set dependencies 
+  -- pass parameters to all the methods
+  -- set test priorities 
+  -- exclude tests,packages,class
+  -- used to controil the exeuction of testng tests
+14th :
+  -- Log4J
+  -- implement the same 
+  -- java based logging frameworkk
+  -- it is configured through a configuration file
+  -- its simple,reliable,flexible and fast 
+  -- add log4j librarires to the framework
+  -- create refernece the logger in the class 
+  -- we have to add the log satements
+  -- Logmanager class and getlogger method 
+  -- info,error ,warn ,fatal,
+  -- create log4j file r log4j properties file
+  -- levels:trace,debug,info,warn,error ,fatal
+  -- we can override r  append the configuration file
+  -- when not required you can set off logging off 
+  -- we can define three main componentsc--appenders,loggers and layouts
+  -- set of key value pairs
+  -- written in java ,.,cross platform 
+  -- part of the apache loggin service 
+15th :
+  -- log4j.xml
+  -- log4j.xml vs log4j.properties file
+ 16th:
+  -- Excpetion handling 
+  -- implementation 
+  -- unexpectec condition at run time
+  -- handling any unexpecred behaviour during the execution 
+  -- enables continue to run the tests even if fails 
+  -- catch the messages and log messgges for trouble shooting 
+17th:
+  -- What is properties file
+  -- how to create the properites fiel
+  -- how to get the data from properties file
+  -- how to set the data to properties file
+  -- run the properties file
+  -- to store the configuartion properties 
+  -- any file with .propert exetneion
+  -- as stored as key value pair
+  -- creatre objec of the propeties file 
+  -- crate object for file input stream 
+  -- load the properites file 
+  -- get the properties value from propertiers file through getprlperties method
+  -- to set -- creaye objct theb iutput stream ,
+  -- set the data using set property methd
+  -- use store  method 
+18th:
+  -- why to use excel 
+  -- how to add the excel libraries
+  -- how to creata excel read function -- get row count and get cell data 
+  -- how to call the excel functions
+  -- helps to make our scripts independent of data handling 
+  -- helps to add ,update manage data separetly (outside the framework)
+  -- helps to make our framework data driven
+  -- add apochi poi libraries 
+  -- create excel file and add some data
+  -- create reference for workbook
+  -- XSSF for new xlsx ,HSSF for old xlx
+  -- XSSFWorkbook wb= new XSSFWorkbook("Excel file")
+  -- HSSFWorkbopokm  b=  new HSSFWorbkj("EXcel"fue)
+  -- create excel untilitt clsas 
+  -- create refernce for spreedsheet 
+  -- XSSFSheet st  =  workbook.getSheet(int n);
+  -- call row function 
+  -- sheet.getphysical number of rows 
+  -- Get Cell Data:
+          -- create reference for workbookm
+          -- crreate refernce for sheet
+          -- call function to get the data 
+          -- sheet.getrow.getcell.getstringcellvalue()
+          -- sheet.getrow.getcell.getNumericCellValue
+   -- How to call  excel functions 
+   -- add parameters for row and column
+   -- create a constructor
+   -- paremeterixe the constructor to get the excel path and sheet name
+   -- create new class to call those functions
+19th:
+  -- how to get the data from excel
+  -- how to create excel data provider function
+  -- how to use testng @dataproibde function
+  -- how to refere the test data drom data provider
+  -- run a sample data driven test 
+  -- how to get the data from excel:
+            -- get the row count
+            -- get the cell count 
+            -- get the string 	cell data
+            -- get the numeric cell data 
+            -- int colcount = sheet.getRows.getphysical number ofncells()
+  -- create excel datq provide class
+  -- create ne function and create reference  object for excel utils
+  -- get row count and column count 
+  -- run aloop to all the data in an object array
+20th:
+  -- What are testng listeners
+  -- types of listeneres
+  -- how to use tesng listeners
+  -- at class level and at suite level
+  -- selenium test example  
+  -- components r interfaces .. keep the track of the test exectuion and helps to
+  -- perfrom actions at multiple stages of test execution
+  -- actions:on start,onfinish,onsuccss,on failuer 
+  -- are interfaces in testng library
+  -- creatye new package and c;lass
+  -- implement itest listenerb interface
+  -- add unimplemenyted methods of itestlistener interface
+  -- create   a demo class and add anotyation
+  -- creat testng.xml file
+  -- define the listesners in testng.xml file
+  -- <listners >
+          <listener class - classnmae ></listener>
+          
+     </listners
+  --  
+21st:
+  -- How to set priority for tests in tesng 
+  -- sequence of execution 
+22nd:
+  -- how to run the tests in multiple browsers
+  -- how to run the tests in mulitple browsrs in parallel
+  -- @parameters("Browsename")
+  -- parallel thread count 
+  -- parameter tags
+  -- alphabetical order 
+23rd:
+  -- what is grouping 
+  -- why to create groups
+  -- how to create test groups 
+  -- how to run the tests from groups
+  -- how to exclude r incluce groups
+  -- how to use meta groupds
+  -- how to use regular expression 
+  -- how to define groups at class level 
+  -- we assign tests r clases to one r more groups 
+  -- makes test management and execution very easy and efficient 
+  -- groups tag under test tag
+  -- run tag under groups tag
+  -- inclue d=tag under run tag
+  -- exclude tag under run tag
+  -- <groups> <run><inclide name="Sanity"></onclucde></run></groups>
+  -- define tag to add meta groups --groups in groupds
+  -- we can use regular expression also to define the tgoups 
+24th:
+  -- how to parameterize tests 
+  -- how to run the test with parameters
+  -- how to make the parameters optional
+  -- @optional means we can make the variabler method as optional 
+25th :
+  -- How to create dependencies 
+  -- what happens when the test has priority
+  -- how to create dependency on mutliple tests
+  -- how to create group dependencies
+  -- how to use regular expressions
+  -- dependsonMethods ={"trst1","test"} 
+  -- groupname.* -- regular expression
+26th:
+ -- how to ignore the tests 
+ -- how to ignore all the test in a class
+ -- how to ignore all the tests in a package
+ -- @ignore to inore the test 
+ -- create packageainfor.java file and add the @ignore annotation 
+27th :
+ -- How to rerun the failed tests manually
+ -- how to rerun the failed tests automated 
+ -- how to retry a tests just after failure 
+ -- Itretryanalyser interface
+ -- implement the methds of rertry analyser inbtercace
+ -- @Test(retryanalsyser = anaylser class name)
+ -- retry count and maxretry count 
+28th:
+ -- How to record selenium tests 
+ -- we can user the object locators and actions through recorded scripts 
+ -- katalon recorder -- plugin addede to chrome 
+29th:
+ -- the elements load time on a web page can vary
+ -- not all the elements are loaded at the same time
+ -- we use waits to handle those
+ -- no such element exception 
+ -- driver.manage.timeouts.implicitlywait(10,timeunit.seconds)
+ -- 250 ms is the default timeout  	
+ -- by default is st to 0
+ -- explciit can be set for a particual elements 
+ -- Webdriver wait = new WebdiverWait()
+ -- webelement t =  wait.until(Expectredconfition .delelemtns tobe cloiablca()
+30th:
+ -- What is fluent wait
+ -- a class  in selenium api
+ -- implements an interface wait 
+ -- define the maximum to wait for the condition and as well as the frequency to check the condition 
+ -- withTimepit()
+ -- pollingEvery()
+ -- ignoring()\
+ -- Wwait w = new FliuentWait(Driver)
+31st:
+ -- Headless browsrs 
+ -- why we have to use the headless browsers
+ -- when we should not use the headless browsers
+ -- program runs at the backend
+ -- are webbrowsers without  a head or gui
+32:
+ -- Headless chrome 
+ -- how to use the headless chrome with selenium
+ -- create object for chromeoptions class
+ -- then call addargement ,method 
+34:
+ -- hpow to add the projec to github
+ -- how to create git hub repo
+ -- how to clone
+ -- hpw tpo add the eclipse project to gituhub repo
+ -- how to push commitn and pull
+  
+#######################################################################################
+Page Layer
+
+
+  Each and every page should have a java class
+  each oage have ciuyple of things:
+  page objects with the help of By locators 
+  will not use page factory without @findby
+  page objects will be defined in the form of private variables -- use the coincept of encapusiation 
+  will create differnet page methods or actions in the form of get method
+  somne specifig page actions 
+
+
+
+Abstract layer:
+   abstract page class 
+   Prototype methods 
+   getinstance method with the help of java generics method -returns the object of specific class we are passing over there 
+   basically returns the object of that particular class 
+
+
+Base Page Layer
+   extends al
+   al pages extend base page 
+   have to implement all the methods of al
+
+Test Layer
+   @test
+
+
+Base test parent of all test classes
+   define bm
+   define am
+   driver initialisation 
+   every test class will extend this class
+   
+Test Runner class
+   testng.xml
+   sequence execution 
+   parallel execution 
+
+Complete Maven project 
+   pom.xml file 
+       sure fire plugin 
+       compile plugin 
+Oops 
+   Inheritance
+   Method overloading 
+   Method oveririding 
+   encapusulation -private public
+   java generics
+   wrapper methods ,generic page actions
+   absrtact class
+   object creation
+   constructor creation 
+ 
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 
+ Selenium Architecture
+ Appium Architecture 
+ API 
+ Api Architecture 
+********************************************************************************I
+
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+   
+   
+   
+
+
+
+   
+
